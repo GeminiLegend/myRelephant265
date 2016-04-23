@@ -12,7 +12,7 @@ var MeanStarter = new Module('meanStarter');
  * Dependency injection is used to define required modules
  */
 MeanStarter.register(function(app, users, system) {
-
+  console.log('registering meanStarter package');
   // Set views path, template engine and default layout
   app.set('views', __dirname + '/server/views');
 

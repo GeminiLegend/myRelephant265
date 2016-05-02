@@ -9,6 +9,7 @@
   FrontEndController.$inject = ['$scope', 'Global', 'FrontEnd'];
 
   function FrontEndController($scope, Global, FrontEnd) {
+    debugger;
     $scope.global = Global;
     $scope.package = {
       name: 'frontEnd'

@@ -9,8 +9,8 @@
 
   function frontEnd($stateProvider) {
     $stateProvider.state('frontEnd example page', {
-      url: '/frontEnd/example',
-      templateUrl: 'frontEnd/views/index.html'
+      url: '/login',
+      templateUrl: 'frontEnd/views/login.html'
     });
   }
 

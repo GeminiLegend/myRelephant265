@@ -5,13 +5,13 @@
  */
 var Module = require('meanio').Module;
 
-var Articles = new Module('articles');
+var FrontEnd = new Module('frontEnd');
 
 /*
  * All MEAN packages require registration
  * Dependency injection is used to define required modules
  */
-Articles.register(function(app, users, system) {
+FrontEnd.register(function(app, users, system) {
   console.log('registering articles package: ');
   // console.log('Articles Module: ', Articles);
 
@@ -25,15 +25,15 @@ Articles.register(function(app, users, system) {
   app.set('views', __dirname + '/server/views');
 
   //We are adding a link to the main menu for all authenticated users
-  Articles.menus.add({
+  FrontEnd.menus.add({
     title: 'articles example page',
     link: 'articles example page',
     roles: ['authenticated'],
     menu: 'main'
   });
 
-  Articles.config.aggregate = true;
-  console.log(Articles.config.aggregate);  
+  FrontEnd.config.aggregate = true;
+  console.log(FrontEnd.config.aggregate);  
   //Articles.aggregateAsset('css', 'articles.css'); //Not working for some reason
 
   /**
@@ -58,5 +58,5 @@ Articles.register(function(app, users, system) {
     });
     */
 
-  return Articles;
+  return FrontEnd;
 });

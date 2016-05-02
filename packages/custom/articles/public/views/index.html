@@ -1,27 +1,10 @@
-<div class="" data-ng-controller="ArticlesController">
-  <h1>Example view from your new awesome package</h1>
-  <h2>Package: {{package.name}}</h2>
-  <ol>
-    <li>
-      <a href="/api/articles/example/anyone" target="_self">Server route that anyone can access</a>
-    </li>
-    <li>
-      <a href="/api/articles/example/auth" target="_self">Server route that requires authentication</a>
-    </li>
-    <li>
-      <a href="/api/articles/example/admin" target="_self">Server route that requires admin user</a>
-    </li>
-    <li>
-      <a href="/api/articles/example/render" target="_self">Raw Html rendering example from using swig</a>
-    </li>
-  </ol>
-  <h3><img src="/articles/assets/img/logo.png" /></h3>
-  </br>
-  <p class="alert alert-info">You can find your package in /packages/articles</p>
-  </br>
-  <p class="alert alert-warning">MEAN versions prior to 0.3.2 will be in /node_modules/articles</p>
-  </br>
-  <h3><a href="http://learn.mean.io">Documentation</a></h3>
-  </br>
-</div>
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" itemscope="itemscope" itemtype="http://schema.org/Product">
 
+  <div class="" data-ng-controller="ArticlesController">
+    <p>Enter your username and password to login</p>
+    Username: <input ng-model="username" type="text">
+    Password: <input ng-model="username" type="text">
+    <button ng-click="login()">Login</button>
+    Don't have an account yet? Register here: <button ng-click="">Register</button>
+  </div>

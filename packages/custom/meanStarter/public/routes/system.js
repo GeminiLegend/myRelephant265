@@ -8,8 +8,8 @@ angular.module('mean.meanStarter').config(['$meanStateProvider', '$urlRouterProv
 
     // states for my app
     $meanStateProvider
-      .state('home', {
-        url: '/',
+      .state('meanStarter', {
+        url: '/meanStarter',
         templateUrl: 'meanStarter/views/system/index.html'
       });
   }

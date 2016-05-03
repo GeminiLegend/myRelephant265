@@ -2,17 +2,15 @@
   'use strict';
 
   /* jshint -W098 */
-  angular
-    .module('mean.frontEnd')
-    .controller('FrontEndController', FrontEndController);
+angular
+.module('mean.frontEnd')
+.controller('FrontEndController', ['$scope', 'Global', FrontEndController]);
 
-  FrontEndController.$inject = ['$scope', 'Global', 'FrontEnd'];
-
-  function FrontEndController($scope, Global, FrontEnd) {
-    debugger;
-    $scope.global = Global;
-    $scope.package = {
-      name: 'frontEnd'
-    };
-  }
+    function FrontEndController($scope, Global) {
+        console.log('Paul is bad at ufc');
+        $scope.global = Global;
+        $scope.package = {
+            name: 'frontEnd'
+        };
+    }
 })();

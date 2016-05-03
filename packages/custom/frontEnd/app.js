@@ -12,7 +12,7 @@ var FrontEnd = new Module('frontEnd');
  * Dependency injection is used to define required modules
  */
 FrontEnd.register(function(app, users, system) {
-  console.log('registering articles package: ');
+  console.log('registering frontEnd package: ');
   // console.log('Articles Module: ', Articles);
 
   //We enable routing. By default the Package Object is passed to the routes

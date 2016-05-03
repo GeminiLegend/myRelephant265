@@ -1,8 +1,10 @@
 
 <div ng-controller='FrontEndController as FeController'>
+	<a id="logo">logo here</a>
 	<ul id="articles">
 		<li ng-repeat='article in articles'>
 			<p>{{article.title}}</p>
+			<a ui-sref="link">Link</a>
 		</li>
 	</ul>
 </div>

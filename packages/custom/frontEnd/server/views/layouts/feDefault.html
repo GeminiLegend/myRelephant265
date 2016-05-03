@@ -3,6 +3,10 @@
 	{% include '../includes/head.html' %}
 
 	<body ng-cloak class="ng-cloak" ng-class="state">
+		<nav class="navMenu">
+			<a class="navButton" ui-sref="home">Home</a>
+			<a class="navButton" ui-sref="profile">Profile</a>
+		</nav>
 	    {% block content %}{% endblock %}    
 	    {% include '../includes/foot.html' %}
 	</body>

@@ -25,5 +25,9 @@ angular.module('mean.frontEnd').config(['$stateProvider', function($stateProvide
         url: '/login',
         templateUrl: 'frontEnd/views/login.html'
     })
+    .state('register', {
+        url: '/register',
+        templateUrl: 'frontEnd/views/register.html'
+    })
   }
 ]);

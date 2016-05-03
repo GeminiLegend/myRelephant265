@@ -25,12 +25,12 @@ FrontEnd.register(function(app, users, system) {
   app.set('views', __dirname + '/server/views');
 
   //We are adding a link to the main menu for all authenticated users
-  FrontEnd.menus.add({
-    title: 'articles example page',
-    link: 'articles example page',
-    roles: ['authenticated'],
-    menu: 'main'
-  });
+  // FrontEnd.menus.add({
+  //   title: 'articles example page',
+  //   link: 'articles example page',
+  //   roles: ['authenticated'],
+  //   menu: 'main'
+  // });
 
   FrontEnd.config.aggregate = true;
   console.log(FrontEnd.config.aggregate);  

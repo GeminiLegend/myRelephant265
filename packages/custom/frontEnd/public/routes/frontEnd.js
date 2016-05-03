@@ -1,17 +1,12 @@
-(function () {
-  'use strict';
+'use strict';
 
-  angular
-  .module('mean.frontEnd')
-  .config(frontEnd);
-
-  frontEnd.$inject = ['$stateProvider'];
-
-  function frontEnd($stateProvider) {
+//Setting up route
+angular.module('mean.frontEnd').config(['$stateProvider', function($stateProvider) {
+	console.log('setting up state');
+    // states for users
     $stateProvider.state('home', {
-      url: '/',
-      templateUrl: 'frontEnd/views/home.html'
-    });
+        url: '',
+        templateUrl: 'frontEnd/views/home.html'
+      })
   }
-
-})();
+]);
